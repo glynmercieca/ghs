@@ -121,6 +121,10 @@
             height: 100%;
             object-fit: cover;
         }
+        .parallax-img {
+            will-change: transform;
+            transform: translate3d(0, 0, 0);
+        }
 
         .hero-overlay-text {
             position: absolute;
@@ -351,7 +355,7 @@
             <!-- Hero Section -->
             <section class="hero-section">
                 <!-- Main Hero Placeholder Image (simulating the view from the window) -->
-                <img src="./assets/DSC_7211.jpg" alt="Beautiful landscape view from living room" class="hero-image">
+                <img src="./assets/DSC_7211.jpg" alt="Beautiful landscape view from living room" class="hero-image parallax-img" data-parallax-speed="0.18">
                 <h2 class="hero-overlay-text font-serif">Welcome</h2>
             </section>
 
@@ -379,7 +383,7 @@
                     <!-- Right Images Content -->
                     <div class="col-lg-6">
                         <!-- Main bathroom/property image -->
-                        <img src="./assets/DSC_7376.jpg" alt="Caravaggio Bathroom" class="main-property-img mb-4">
+                        <img src="./assets/DSC_7376.jpg" alt="Caravaggio Bathroom" class="main-property-img mb-4 parallax-img" data-parallax-speed="0.1">
                     </div>
                 </div>
             </section>
@@ -389,7 +393,7 @@
         <div id="view-contact" class="page-view d-none">
             <!-- Contact Hero Section -->
             <section class="hero-section" style="height: 40vh; min-height: 300px;">
-                <img src="./assets/DSC_7299.jpg" alt="Book Now Header" class="hero-image">
+                <img src="./assets/DSC_7299.jpg" alt="Book Now Header" class="hero-image parallax-img" data-parallax-speed="0.18">
                 <h2 class="hero-overlay-text font-serif" style="font-size: 3.5rem;">Book Now</h2>
             </section>
 
@@ -818,10 +822,44 @@
             
             // Scroll back to top
             window.scrollTo(0, 0);
+
+            // Recalculate parallax offsets for the newly visible view
+            if (typeof window.updateParallax === 'function') {
+                window.updateParallax();
+            }
         }
 
         // Initialize Lightbox Modal Hook
         document.addEventListener('DOMContentLoaded', () => {
+            const parallaxImages = Array.from(document.querySelectorAll('.parallax-img'));
+            let parallaxTicking = false;
+
+            const updateParallax = () => {
+                const viewportCenter = window.innerHeight / 2;
+                parallaxImages.forEach((img) => {
+                    if (img.offsetParent === null) return;
+                    const rect = img.getBoundingClientRect();
+                    const imgCenter = rect.top + (rect.height / 2);
+                    const speed = parseFloat(img.dataset.parallaxSpeed || '0.12');
+                    const offset = (viewportCenter - imgCenter) * speed;
+                    img.style.transform = `translate3d(0, ${offset}px, 0)`;
+                });
+            };
+
+            const queueParallaxUpdate = () => {
+                if (parallaxTicking) return;
+                parallaxTicking = true;
+                requestAnimationFrame(() => {
+                    updateParallax();
+                    parallaxTicking = false;
+                });
+            };
+
+            window.updateParallax = queueParallaxUpdate;
+            window.addEventListener('scroll', queueParallaxUpdate, { passive: true });
+            window.addEventListener('resize', queueParallaxUpdate);
+            queueParallaxUpdate();
+
             const lightboxModalEl = document.getElementById('lightboxModal');
             const carouselEl = document.getElementById('lightboxCarousel');
             const lightboxImages = carouselEl ? carouselEl.querySelectorAll('.lightbox-img') : [];
