@@ -246,7 +246,7 @@
         }
         .gallery-marquee-track {
             display: inline-flex;
-            animation: marqueeScroll 40s linear infinite;
+            animation: marqueeScroll 1000s linear infinite;
         }
         .gallery-marquee-track:hover {
             animation-play-state: paused;
@@ -315,10 +315,7 @@
                 <div class="col-4 d-flex justify-content-center">
                     <a href="#" onclick="navigateTo('home')" class="navbar-brand-container">
                         <!-- Crest Icon -->
-                        <i class="bi bi-shield crest-icon"></i>
-                        <h1 class="logo-title">GALEA</h1>
-                        <p class="logo-subtitle font-script">hospitality</p>
-                        <span class="logo-est">- EST 2024 -</span>
+                        <img src="./assets/logo.png" alt="Galea Hospitality Logo" class="crest-icon" width="100">
                     </a>
                 </div>
                 
@@ -336,7 +333,7 @@
     <!-- Offcanvas Navigation Menu -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
         <div class="offcanvas-header pb-0 mt-3 px-4">
-            <h5 class="offcanvas-title font-serif logo-title" id="offcanvasMenuLabel" style="font-size: 1.5rem;">GALEA</h5>
+            <h5 class="offcanvas-title font-serif logo-title" id="offcanvasMenuLabel" style="font-size: 1.5rem;">MENU</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body mt-4 px-4">
@@ -353,7 +350,7 @@
             <!-- Hero Section -->
             <section class="hero-section">
                 <!-- Main Hero Placeholder Image (simulating the view from the window) -->
-                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Beautiful landscape view from living room" class="hero-image">
+                <img src="./assets/DSC_7211.jpg" alt="Beautiful landscape view from living room" class="hero-image">
                 <h2 class="hero-overlay-text font-serif">Welcome</h2>
             </section>
 
@@ -381,20 +378,7 @@
                     <!-- Right Images Content -->
                     <div class="col-lg-6">
                         <!-- Main bathroom/property image -->
-                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Caravaggio Bathroom" class="main-property-img mb-4">
-                        
-                        <!-- Thumbnails Placeholder Row -->
-                        <div class="row gx-3">
-                            <div class="col-4 text-center">
-                                <img src="https://via.placeholder.com/300x200/e9ecef/6c757d?text=DSC_7356" alt="Gallery Image 1" class="thumbnail-img">
-                            </div>
-                            <div class="col-4 text-center">
-                                <img src="https://via.placeholder.com/300x200/e9ecef/6c757d?text=DSC_7338" alt="Gallery Image 2" class="thumbnail-img">
-                            </div>
-                            <div class="col-4 text-center">
-                                <img src="https://via.placeholder.com/300x200/e9ecef/6c757d?text=DSC_7307" alt="Gallery Image 3" class="thumbnail-img">
-                            </div>
-                        </div>
+                        <img src="./assets/DSC_7376.jpg" alt="Caravaggio Bathroom" class="main-property-img mb-4">
                     </div>
                 </div>
             </section>
@@ -404,7 +388,7 @@
         <div id="view-contact" class="page-view d-none">
             <!-- Contact Hero Section -->
             <section class="hero-section" style="height: 40vh; min-height: 300px;">
-                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Book Now Header" class="hero-image">
+                <img src="./assets/DSC_7299.jpg" alt="Book Now Header" class="hero-image">
                 <h2 class="hero-overlay-text font-serif" style="font-size: 3.5rem;">Book Now</h2>
             </section>
 
@@ -475,20 +459,106 @@
         <div class="gallery-marquee-container">
             <div class="gallery-marquee-track">
                 <!-- First Set -->
-                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 1" data-slide-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 2" data-slide-index="1" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 3" data-slide-index="2" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09be1587?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 4" data-slide-index="3" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 5" data-slide-index="4" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 6" data-slide-index="5" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                
+                <img src="./assets/gallery/DSC_7152.jpg" alt="Gallery 1" data-slide-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7165.jpg" alt="Gallery 2" data-slide-index="1" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7169.jpg" alt="Gallery 3" data-slide-index="2" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7171.jpg" alt="Gallery 4" data-slide-index="3" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7174.jpg" alt="Gallery 5" data-slide-index="4" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7175.jpg" alt="Gallery 6" data-slide-index="5" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7182.jpg" alt="Gallery 7" data-slide-index="6" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7189.jpg" alt="Gallery 8" data-slide-index="7" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7192.jpg" alt="Gallery 9" data-slide-index="8" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7197.jpg" alt="Gallery 10" data-slide-index="9" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7202.jpg" alt="Gallery 11" data-slide-index="10" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7209.jpg" alt="Gallery 12" data-slide-index="11" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7211.jpg" alt="Gallery 13" data-slide-index="12" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7220.jpg" alt="Gallery 14" data-slide-index="13" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7229.jpg" alt="Gallery 15" data-slide-index="14" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7236.jpg" alt="Gallery 16" data-slide-index="15" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7275.jpg" alt="Gallery 17" data-slide-index="16" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7281.jpg" alt="Gallery 18" data-slide-index="17" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7282.jpg" alt="Gallery 19" data-slide-index="18" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7299.jpg" alt="Gallery 20" data-slide-index="19" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7305.jpg" alt="Gallery 21" data-slide-index="20" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7308.jpg" alt="Gallery 22" data-slide-index="21" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7311.jpg" alt="Gallery 23" data-slide-index="22" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7315.jpg" alt="Gallery 24" data-slide-index="23" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7321.jpg" alt="Gallery 25" data-slide-index="24" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7322.jpg" alt="Gallery 26" data-slide-index="25" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7325.jpg" alt="Gallery 27" data-slide-index="26" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7328.jpg" alt="Gallery 28" data-slide-index="27" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7345.jpg" alt="Gallery 29" data-slide-index="28" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7358.jpg" alt="Gallery 30" data-slide-index="29" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7397.jpg" alt="Gallery 31" data-slide-index="30" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7406.jpg" alt="Gallery 32" data-slide-index="31" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7413.jpg" alt="Gallery 33" data-slide-index="32" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7419.jpg" alt="Gallery 34" data-slide-index="33" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7431.jpg" alt="Gallery 35" data-slide-index="34" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7437.jpg" alt="Gallery 36" data-slide-index="35" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7439.jpg" alt="Gallery 37" data-slide-index="36" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7445.jpg" alt="Gallery 38" data-slide-index="37" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7446.jpg" alt="Gallery 39" data-slide-index="38" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7450.jpg" alt="Gallery 40" data-slide-index="39" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7459.jpg" alt="Gallery 41" data-slide-index="40" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7471.jpg" alt="Gallery 42" data-slide-index="41" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7475.jpg" alt="Gallery 43" data-slide-index="42" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7499.jpg" alt="Gallery 44" data-slide-index="43" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7517.jpg" alt="Gallery 45" data-slide-index="44" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7538.jpg" alt="Gallery 46" data-slide-index="45" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7544.jpg" alt="Gallery 47" data-slide-index="46" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7547.jpg" alt="Gallery 48" data-slide-index="47" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7556.jpg" alt="Gallery 49" data-slide-index="48" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+
                 <!-- Second Set (Duplicate for seamless loop) -->
-                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 1" data-slide-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 2" data-slide-index="1" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 3" data-slide-index="2" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09be1587?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 4" data-slide-index="3" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 5" data-slide-index="4" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 6" data-slide-index="5" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                <img src="./assets/gallery/DSC_7152.jpg" alt="Gallery 1" data-slide-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7165.jpg" alt="Gallery 2" data-slide-index="1" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7169.jpg" alt="Gallery 3" data-slide-index="2" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7171.jpg" alt="Gallery 4" data-slide-index="3" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7174.jpg" alt="Gallery 5" data-slide-index="4" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7175.jpg" alt="Gallery 6" data-slide-index="5" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7182.jpg" alt="Gallery 7" data-slide-index="6" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7189.jpg" alt="Gallery 8" data-slide-index="7" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7192.jpg" alt="Gallery 9" data-slide-index="8" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7197.jpg" alt="Gallery 10" data-slide-index="9" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7202.jpg" alt="Gallery 11" data-slide-index="10" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7209.jpg" alt="Gallery 12" data-slide-index="11" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7211.jpg" alt="Gallery 13" data-slide-index="12" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7220.jpg" alt="Gallery 14" data-slide-index="13" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7229.jpg" alt="Gallery 15" data-slide-index="14" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7236.jpg" alt="Gallery 16" data-slide-index="15" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7275.jpg" alt="Gallery 17" data-slide-index="16" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7281.jpg" alt="Gallery 18" data-slide-index="17" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7282.jpg" alt="Gallery 19" data-slide-index="18" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7299.jpg" alt="Gallery 20" data-slide-index="19" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7305.jpg" alt="Gallery 21" data-slide-index="20" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7308.jpg" alt="Gallery 22" data-slide-index="21" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7311.jpg" alt="Gallery 23" data-slide-index="22" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7315.jpg" alt="Gallery 24" data-slide-index="23" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7321.jpg" alt="Gallery 25" data-slide-index="24" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7322.jpg" alt="Gallery 26" data-slide-index="25" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7325.jpg" alt="Gallery 27" data-slide-index="26" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7328.jpg" alt="Gallery 28" data-slide-index="27" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7345.jpg" alt="Gallery 29" data-slide-index="28" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7358.jpg" alt="Gallery 30" data-slide-index="29" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7397.jpg" alt="Gallery 31" data-slide-index="30" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7406.jpg" alt="Gallery 32" data-slide-index="31" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7413.jpg" alt="Gallery 33" data-slide-index="32" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7419.jpg" alt="Gallery 34" data-slide-index="33" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7431.jpg" alt="Gallery 35" data-slide-index="34" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7437.jpg" alt="Gallery 36" data-slide-index="35" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7439.jpg" alt="Gallery 37" data-slide-index="36" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7445.jpg" alt="Gallery 38" data-slide-index="37" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7446.jpg" alt="Gallery 39" data-slide-index="38" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7450.jpg" alt="Gallery 40" data-slide-index="39" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7459.jpg" alt="Gallery 41" data-slide-index="40" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7471.jpg" alt="Gallery 42" data-slide-index="41" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7475.jpg" alt="Gallery 43" data-slide-index="42" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7499.jpg" alt="Gallery 44" data-slide-index="43" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7517.jpg" alt="Gallery 45" data-slide-index="44" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7538.jpg" alt="Gallery 46" data-slide-index="45" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7544.jpg" alt="Gallery 47" data-slide-index="46" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7547.jpg" alt="Gallery 48" data-slide-index="47" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                <img src="./assets/gallery/DSC_7556.jpg" alt="Gallery 49" data-slide-index="48" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
             </div>
         </div>
     </section>
@@ -501,10 +571,7 @@
                 <!-- Footer Logo -->
                 <div class="col-md-6 d-flex justify-content-center justify-content-md-start mb-5 mb-md-0 ps-md-5">
                     <div class="navbar-brand-container">
-                        <i class="bi bi-shield crest-icon"></i>
-                        <h2 class="logo-title">GALEA</h2>
-                        <p class="logo-subtitle font-script">hospitality</p>
-                        <span class="logo-est">- EST 2024 -</span>
+                       <img src="./assets/logo.png" alt="Galea Hospitality Logo" class="crest-icon" width="100">
                     </div>
                 </div>
                 
@@ -540,24 +607,154 @@
                     <div id="lightboxCarousel" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="d-block w-100 lightbox-img" alt="Gallery 1">
+                                <img data-src="./assets/gallery/DSC_7152.jpg" class="d-block w-100 lightbox-img" alt="Gallery 1" loading="lazy" decoding="async">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="d-block w-100 lightbox-img" alt="Gallery 2">
+                                <img data-src="./assets/gallery/DSC_7165.jpg" class="d-block w-100 lightbox-img" alt="Gallery 2" loading="lazy" decoding="async">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="d-block w-100 lightbox-img" alt="Gallery 3">
+                                <img data-src="./assets/gallery/DSC_7169.jpg" class="d-block w-100 lightbox-img" alt="Gallery 3" loading="lazy" decoding="async">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09be1587?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="d-block w-100 lightbox-img" alt="Gallery 4">
+                                <img data-src="./assets/gallery/DSC_7171.jpg" class="d-block w-100 lightbox-img" alt="Gallery 4" loading="lazy" decoding="async">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="d-block w-100 lightbox-img" alt="Gallery 5">
+                                <img data-src="./assets/gallery/DSC_7174.jpg" class="d-block w-100 lightbox-img" alt="Gallery 5" loading="lazy" decoding="async">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="d-block w-100 lightbox-img" alt="Gallery 6">
+                                <img data-src="./assets/gallery/DSC_7175.jpg" class="d-block w-100 lightbox-img" alt="Gallery 6" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7182.jpg" class="d-block w-100 lightbox-img" alt="Gallery 7" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7189.jpg" class="d-block w-100 lightbox-img" alt="Gallery 8" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7192.jpg" class="d-block w-100 lightbox-img" alt="Gallery 9" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7197.jpg" class="d-block w-100 lightbox-img" alt="Gallery 10" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7202.jpg" class="d-block w-100 lightbox-img" alt="Gallery 11" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7209.jpg" class="d-block w-100 lightbox-img" alt="Gallery 12" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7211.jpg" class="d-block w-100 lightbox-img" alt="Gallery 13" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7220.jpg" class="d-block w-100 lightbox-img" alt="Gallery 14" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7229.jpg" class="d-block w-100 lightbox-img" alt="Gallery 15" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7236.jpg" class="d-block w-100 lightbox-img" alt="Gallery 16" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7275.jpg" class="d-block w-100 lightbox-img" alt="Gallery 17" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7281.jpg" class="d-block w-100 lightbox-img" alt="Gallery 18" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7282.jpg" class="d-block w-100 lightbox-img" alt="Gallery 19" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7299.jpg" class="d-block w-100 lightbox-img" alt="Gallery 20" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7305.jpg" class="d-block w-100 lightbox-img" alt="Gallery 21" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7308.jpg" class="d-block w-100 lightbox-img" alt="Gallery 22" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7311.jpg" class="d-block w-100 lightbox-img" alt="Gallery 23" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7315.jpg" class="d-block w-100 lightbox-img" alt="Gallery 24" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7321.jpg" class="d-block w-100 lightbox-img" alt="Gallery 25" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7322.jpg" class="d-block w-100 lightbox-img" alt="Gallery 26" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7325.jpg" class="d-block w-100 lightbox-img" alt="Gallery 27" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7328.jpg" class="d-block w-100 lightbox-img" alt="Gallery 28" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7345.jpg" class="d-block w-100 lightbox-img" alt="Gallery 29" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7358.jpg" class="d-block w-100 lightbox-img" alt="Gallery 30" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7397.jpg" class="d-block w-100 lightbox-img" alt="Gallery 31" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7406.jpg" class="d-block w-100 lightbox-img" alt="Gallery 32" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7413.jpg" class="d-block w-100 lightbox-img" alt="Gallery 33" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7419.jpg" class="d-block w-100 lightbox-img" alt="Gallery 34" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7431.jpg" class="d-block w-100 lightbox-img" alt="Gallery 35" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7437.jpg" class="d-block w-100 lightbox-img" alt="Gallery 36" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7439.jpg" class="d-block w-100 lightbox-img" alt="Gallery 37" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7445.jpg" class="d-block w-100 lightbox-img" alt="Gallery 38" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7446.jpg" class="d-block w-100 lightbox-img" alt="Gallery 39" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7450.jpg" class="d-block w-100 lightbox-img" alt="Gallery 40" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7459.jpg" class="d-block w-100 lightbox-img" alt="Gallery 41" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7471.jpg" class="d-block w-100 lightbox-img" alt="Gallery 42" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7475.jpg" class="d-block w-100 lightbox-img" alt="Gallery 43" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7499.jpg" class="d-block w-100 lightbox-img" alt="Gallery 44" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7517.jpg" class="d-block w-100 lightbox-img" alt="Gallery 45" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7538.jpg" class="d-block w-100 lightbox-img" alt="Gallery 46" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7544.jpg" class="d-block w-100 lightbox-img" alt="Gallery 47" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7547.jpg" class="d-block w-100 lightbox-img" alt="Gallery 48" loading="lazy" decoding="async">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="./assets/gallery/DSC_7556.jpg" class="d-block w-100 lightbox-img" alt="Gallery 49" loading="lazy" decoding="async">
                             </div>
                         </div>
+
                         <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -626,7 +823,26 @@
         document.addEventListener('DOMContentLoaded', () => {
             const lightboxModalEl = document.getElementById('lightboxModal');
             const carouselEl = document.getElementById('lightboxCarousel');
+            const lightboxImages = carouselEl ? carouselEl.querySelectorAll('.lightbox-img') : [];
             let bsCarousel;
+
+            function loadLightboxSlide(index) {
+                if (index < 0 || index >= lightboxImages.length) return;
+                const img = lightboxImages[index];
+                if (!img) return;
+                if (!img.getAttribute('src')) {
+                    const dataSrc = img.getAttribute('data-src');
+                    if (dataSrc) {
+                        img.setAttribute('src', dataSrc);
+                    }
+                }
+            }
+
+            function loadLightboxSlideAndNeighbors(index) {
+                loadLightboxSlide(index);
+                loadLightboxSlide(index - 1);
+                loadLightboxSlide(index + 1);
+            }
 
             if (typeof bootstrap !== 'undefined') {
                 bsCarousel = new bootstrap.Carousel(carouselEl, {
@@ -640,11 +856,20 @@
                 const triggerImg = event.relatedTarget;
                 // Get the index from data-slide-index attribute
                 const slideIndex = parseInt(triggerImg.getAttribute('data-slide-index'));
+
+                // Load the current and adjacent slides on demand
+                loadLightboxSlideAndNeighbors(slideIndex);
                 
                 // Move lightbox carousel to the selected image
                 if (bsCarousel) {
                     bsCarousel.to(slideIndex);
                 }
+            });
+
+            carouselEl.addEventListener('slid.bs.carousel', function () {
+                const activeSlide = carouselEl.querySelector('.carousel-item.active');
+                const activeIndex = Array.from(carouselEl.querySelectorAll('.carousel-item')).indexOf(activeSlide);
+                loadLightboxSlideAndNeighbors(activeIndex);
             });
 
             // --- Flatpickr Date Range Initialization ---
