@@ -31,6 +31,12 @@
             font-family: 'Lato', sans-serif;
             color: var(--text-dark);
             font-weight: 300;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        html {
+            overflow-x: hidden;
         }
 
         /* Typography */
@@ -288,6 +294,29 @@
             }
         }
 
+        
+         (max-width: 576px) {
+            .site-header {
+                padding: 0.9rem 0.75rem !important;
+            }
+            .site-header .container-fluid {
+                padding-left: 0.25rem;
+                padding-right: 0.25rem;
+            }
+            .site-header .btn-book {
+                padding: 8px 12px;
+                font-size: 0.72rem;
+                letter-spacing: 2px;
+            }
+            .site-header .menu-text {
+                font-size: 0.75rem;
+            }
+            .site-header .crest-icon {
+                width: 86px;
+                height: auto;
+            }
+        }
+
         /* Success Animation */
         .success-animation {
             font-size: 4.5rem;
@@ -308,7 +337,7 @@
 <body>
 
     <!-- Header Navigation -->
-    <header class="py-4 px-4 bg-white">
+    <header class="site-header py-4 px-4 bg-white">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <!-- Book Button -->
@@ -360,11 +389,13 @@
             </section>
 
             <!-- Content Section: Caravaggio -->
-            <section class="content-section container">
-                <div class="row gx-5 align-items-start">
+            <section class="content-section container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-11 col-xxl-10">
+                        <div class="row gx-5 align-items-start">
                     
                     <!-- Left Text Content -->
-                    <div class="col-lg-6 mb-5 mb-lg-0 property-description">
+                    <div class="col-12 col-lg-6 mb-5 mb-lg-0 property-description">
                         <h2 class="caravaggio-title">Caravaggio</h2>
                         
                         <p>Charming Duplex Apartment with Private Pool.</p>
@@ -381,9 +412,11 @@
                     </div>
                     
                     <!-- Right Images Content -->
-                    <div class="col-lg-6">
+                    <div class="col-12 col-lg-6">
                         <!-- Main bathroom/property image -->
-                        <img src="./assets/DSC_7376.jpg" alt="Caravaggio Bathroom" class="main-property-img mb-4 parallax-img" data-parallax-speed="0.1">
+                        <img src="./assets/DSC_7376.jpg" alt="Caravaggio Bathroom" class="main-property-img mb-4">
+                    </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -398,9 +431,9 @@
             </section>
 
             <!-- Contact Form Section -->
-            <section class="content-section container">
+            <section class="content-section container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-12 col-xl-10 col-xxl-8">
                         <h3 class="font-serif mb-4 text-center">Get in Touch</h3>
                         <p class="text-center mb-5" style="font-size: 1.05rem;">We would love to hear from you. Please fill out the form below to send us a message.</p>
                         
@@ -460,9 +493,12 @@
 
     <!-- Pre-Footer Image Gallery Marquee -->
     <section class="gallery-section">
-        <h3 class="font-serif text-center mb-4">Gallery</h3>
-        <div class="gallery-marquee-container">
-            <div class="gallery-marquee-track">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h3 class="font-serif text-center mb-4">Gallery</h3>
+                    <div class="gallery-marquee-container">
+                        <div class="gallery-marquee-track">
                 <!-- First Set -->
                 <img src="./assets/gallery/DSC_7152.jpg" alt="Gallery 1" data-slide-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
                 <img src="./assets/gallery/DSC_7165.jpg" alt="Gallery 2" data-slide-index="1" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
@@ -564,24 +600,29 @@
                 <img src="./assets/gallery/DSC_7544.jpg" alt="Gallery 47" data-slide-index="46" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
                 <img src="./assets/gallery/DSC_7547.jpg" alt="Gallery 48" data-slide-index="47" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
                 <img src="./assets/gallery/DSC_7556.jpg" alt="Gallery 49" data-slide-index="48" data-bs-toggle="modal" data-bs-target="#lightboxModal" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer class="footer-section">
-        <div class="container">
-            <div class="row align-items-center">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-xl-11 col-xxl-10">
+                    <div class="row align-items-center">
                 
                 <!-- Footer Logo -->
-                <div class="col-md-6 d-flex justify-content-center justify-content-md-start mb-5 mb-md-0 ps-md-5">
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start mb-5 mb-md-0 ps-md-5">
                     <div class="navbar-brand-container">
                        <img src="./assets/logo.png" alt="Galea Hospitality Logo" class="crest-icon" width="100">
                     </div>
                 </div>
                 
                 <!-- Footer Contact Details -->
-                <div class="col-md-6 d-flex justify-content-center justify-content-md-end pe-md-5">
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end pe-md-5">
                     <div class="contact-info text-center text-md-start">
                         <p>Palazzo Maltese</p>
                         <p>Caravaggio</p>
@@ -594,6 +635,8 @@
                     </div>
                 </div>
                 
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
